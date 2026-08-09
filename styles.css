@@ -1,0 +1,103 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+h3 {
+  background-color: #f3e309;   
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('bg.jpg');
+  min-height: 100%;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+/* Section Styling */
+.section {
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px; /* Added margin to create space between sections */
+}
+
+.reading {
+    background-color: #4CAF50;
+}
+
+.listen-repeat {
+    background-color: #2196F3;
+}
+
+.fun-exercise {
+    background-color: #FF5722;
+}
+
+/* Section Content */
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Button Styling */
+button {
+    background-color: #ffffff;
+    color: #333;
+    font-size: 1.1em;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+/* Mobile Responsive Styling */
+@media screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 2.5em;
+    }
+
+    .section h2 {
+        font-size: 2em;
+    }
+
+    .section p {
+        font-size: 1em;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-a-Mole!</title>
+    <link rel="stylesheet" href="button.css">
+    <style> 
+    body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #ff6b6b;
+}
+
+.score, .time {
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+.hole {
+    width: 80px;
+    height: 80px;
+    background-color: #8b4513;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.hole::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    left: 10px;
+    transition: all 0.3s ease;
+}
+
+.hole.active::after {
+    bottom: 10px;
+    background-color: #ff6b6b;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}    
+    </style>
+</head>
+<body>
+    <a href="home.html" class="hyperlink-button">Home</a>
+<br>
+    <div class="game-container">
+        <h1 class="colored-heading">Just Kidding! No Solving Execises! Enjoy The Game! </h1>
+        <h1>Whack-a-Mole! 🐭</h1>
+        <div class="score">Score: <span id="score">0</span></div>
+        <div class="time">Time Left: <span id="time">30</span>s</div>
+        <div class="grid">
+            <div class="hole" id="1"></div>
+            <div class="hole" id="2"></div>
+            <div class="hole" id="3"></div>
+            <div class="hole" id="4"></div>
+            <div class="hole" id="5"></div>
+            <div class="hole" id="6"></div>
+        </div>
+        <button id="start-btn">Start Game</button>
+    </div>
+    <script src="game_1.js"></script>
+</body>
+</html>

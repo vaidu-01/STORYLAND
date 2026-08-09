@@ -1,0 +1,133 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Go Home Button */
+.go-home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.go-home-button:hover {
+    background-color: #45a049;
+}
+
+/* Header Styles */
+.header {
+    position: relative;
+    background-image: url('book2.jpeg'); /* Replace with the URL of your image or local path */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5); /* Slight overlay for better text visibility */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0;
+}
+
+/* Story Section Styles */
+.story-section {
+    margin: 20px;
+}
+
+/* Individual Story Styles */
+.story {
+    margin-bottom: 20px;
+}
+
+.story-title {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.story-title:hover {
+    background-color: #45a049;
+}
+
+/* Story Content - Hidden by default */
+.story-content {
+    display: none;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+/* Show the content when visible class is added */
+.story-content.visible {
+    display: block;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 1em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    .story-title {
+        font-size: 1.1em;
+    }
+
+    .story-content {
+        font-size: 1em;
+    }
+
+    .go-home-button {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+
+    .footer p {
+        font-size: 0.9em;
+    }
+}

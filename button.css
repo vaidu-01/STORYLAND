@@ -1,0 +1,30 @@
+.hyperlink-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.hyperlink-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+/* Style for the heading of game */
+.colored-heading {
+    background-color: #4a6fa5;  /* Nice blue color */
+    color: white;              /* White text for contrast */
+    padding: 15px 25px;       /* Top/bottom and left/right padding */
+    text-align: center;       /* Center the text */
+    font-family: Arial, sans-serif;  /* Clean font */
+    border-radius: 5px;       /* Slightly rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);  /* Subtle shadow */
+    margin: 20px auto;        /* Center the heading with margin */
+    width: fit-content;       /* Make width fit the content */
+}

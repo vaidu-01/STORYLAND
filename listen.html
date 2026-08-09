@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style> 
+        /* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Go Home Button */
+.go-home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.go-home-button:hover {
+    background-color: #45a049;
+}
+
+/* Header Styles */
+.header {
+    position: relative;
+    background-image: url('L5.jpg'); /* Replace with the URL of your image or local path */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5); /* Slight overlay for better text visibility */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 1em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    .story-title {
+        font-size: 1.1em;
+    }
+
+    .story-content {
+        font-size: 1em;
+    }
+
+    .go-home-button {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+
+    .footer p {
+        font-size: 0.9em;
+    }
+}
+
+
+/* Container for videos */
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 videos per row */
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Styling each video item */
+.video-item {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    background-color: #000;
+}
+
+.video-item video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .video-container {
+        grid-template-columns: 1fr; /* 1 video per row on smaller screens */
+    }
+}
+
+</style> 
+</head>
+<body>
+    <!-- Go Home Button -->
+    <a href="home.html" class="go-home-button"> Home </a>
+<br>
+<br>
+<br>
+    <!-- Header Section with Background Image -->
+    <header class="header">
+        <div class="overlay">
+            <h1>Watch, Listen & Repeat</h1>
+        </div>
+    </header>
+<br>
+<div class="video-container">
+    <div class="video-item">
+        <video controls>
+            <source src="zootopia_1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="video-item">
+        <video controls>
+            <source src="the stork_2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="video-item">
+        <video controls>
+            <source src="sing_3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="video-item">
+        <video controls>
+            <source src="Hotel_Transylvania_4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>   
+</div> 
+
+<br>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Created by Vaidehee S. Dalvi.</p>
+    </footer>
+
+</body>
+</html>
